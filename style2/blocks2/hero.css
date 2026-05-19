@@ -8,15 +8,10 @@
   color: var(--color-text);
   padding: var(--spacing-lg) 0;
   background-attachment: fixed;
-
-}
-
-.hero__content {
-  background-color: transparent;
 }
 
 .hero h1 {
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -28,7 +23,7 @@
 
 .hero ul {
   opacity: 90%;
-  margin-bottom: 32px;
+  margin-bottom: var(--spacing-md);
 }
 
 .aboutus {
@@ -299,7 +294,8 @@
 
 .news {
   display: flex;
-  gap: var(--spacing-md);
+  flex-direction: column;
+  gap: var(--spacing-xs);
 }
 
 .news__card {
@@ -308,6 +304,10 @@
   gap: 12px;
   background-color: var(--color-bg-light);
   padding: 24px;
+
+  .general__description {
+    display: none;
+  }
 }
 
 .news__button {
@@ -335,7 +335,7 @@
   background-color: var(--color-bg);
 }
 /* Адаптивность */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .contacts-table {
     padding: 40px 0;
   }
@@ -357,4 +357,4 @@
     width: 45px;
     height: 45px;
   }
-}
+} */

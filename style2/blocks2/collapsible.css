@@ -1,0 +1,79 @@
+/* === КОНТЕЙНЕР КОНТЕНТА === */
+.collapsible-content {
+  overflow: hidden;
+  max-height: 120px; /* Высота в свёрнутом состоянии */
+  position: relative;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: max-height;
+}
+
+/* Градиент-затухание снизу (пока свёрнуто) */
+.collapsible-content::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--color-bg, #fff));
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* === КНОПКА === */
+.collapsible-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  background: transparent;
+  border: 1px solid var(--color-primary, #c9a961);
+  color: var(--color-primary, #c9a961);
+  border-radius: var(--radius, 0.8rem);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.collapsible-toggle:hover {
+  background: var(--color-primary, #c9a961);
+  color: #fff;
+}
+
+.collapsible-toggle:focus-visible {
+  outline: 2px solid var(--color-primary, #c9a961);
+  outline-offset: 2px;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+}
+
+/* Состояние: развёрнуто */
+.collapsible-content.is-expanded {
+  /* max-height задаётся через JS для идеальной анимации */
+}
+
+.collapsible-content.is-expanded::after {
+  opacity: 0;
+}
+
+.collapsible-toggle[aria-expanded="true"] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+/*  MOBILE-FIRST: сворачиваем только на телефонах */
+@media (min-width: 768px) {
+  .collapsible-content {
+    max-height: none;
+    overflow: visible;
+  }
+  .collapsible-content::after {
+    display: none;
+  }
+  .collapsible-toggle {
+    display: none; /* На десктопе кнопка не нужна */
+  }
+}

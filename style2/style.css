@@ -1,0 +1,19 @@
+@import url('./variables.css');
+@import url('./reset.css');
+@import url('./global.css');
+@import url('./container.css');
+
+/* Подключение блоки */
+@import url('./blocks2/header.css');
+@import url('./blocks2/content.css');
+@import url('./blocks2/logo.css');
+@import url('./blocks2/grid.css');
+@import url('./blocks2/footer.css');
+@import url('./blocks2/hero.css');
+@import url('./blocks2/collapsible.css');
+
+/* Media */
+/* @import url('./blocks2/hero_media.css'); */
+/* @import url('./blocks2/header_media.css'); */
+/* @import url('./blocks2/content_media.css'); */
+/* @import url('./blocks2/grid_media.css'); */

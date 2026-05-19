@@ -8,7 +8,6 @@
   color: var(--color-text);
   padding: var(--spacing-lg) 0;
   background-attachment: fixed;
-
 }
 
 .hero__content {
@@ -334,6 +333,7 @@
 .news__button:hover {
   background-color: var(--color-bg);
 }
+
 /* Адаптивность */
 @media (max-width: 768px) {
   .contacts-table {

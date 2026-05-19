@@ -12,7 +12,7 @@
 	<meta property="og:title" content="STONE TOWN | Керамогранит на заказ" />
 	<meta property="og:image" content="https://keramopro.ru/img/og-image.jpg" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style2/style.css">
 	<!-- <link rel="preload" href="fonts/roboto.woff2" as="font" type="font/woff2" crossorigin /> -->
 </head>
 
@@ -243,10 +243,10 @@
 			</div>
 		</section>
 		<!-- Портфолио (галерея) -->
-		<section class="portfolio" id="portfolio">
+		<section class="portfolio collapsible-section"" id="portfolio">
 			<div class="container">
 				<h2>Наши работы</h2>
-				<div class="gallery" id="gallery">
+				<div class="gallery collapsible-content" id="gallery">
 					<!-- Фото будут добавлены через JS или вручную -->
 					<!-- ВСТАВЛЯЙТЕ СЮДА ВАШИ ФОТО -->
 					<div class="gallery__item" data-animate>
@@ -305,6 +305,11 @@
 					<!-- Копируйте блок div.gallery__item столько раз, сколько у вас работ -->
 				</div>
 			</div>
+			<!-- Кнопка-переключатель -->
+			<button class="collapsible-toggle" aria-expanded="false" aria-controls="gallery">
+				<span class="toggle-text">Показать полностью</span>
+				<span class="toggle-icon" aria-hidden="true">▼</span>
+			</button>
 		</section>
 
 		<!-- Цены -->
@@ -349,19 +354,20 @@
 					<div class="news__card">
 						<img src="./img/portfolio/news1.webp" alt="" class="img">
 						<p class="general__description">Тонкая столешница из искусственного камня</p>
-						<p>Тонкая столешница из искусственного камня…</p>
+						<p class="general__description--moreinfo">Тонкая столешница из искусственного камня…</p>
 						<button class="news__button">Узнать больше</button>
 					</div>
 					<div class="news__card">
 						<img src="./img/portfolio/news2.webp" alt="" class="img">
 						<p class="general__description">Широкоформатный керамогранит на стену</p>
-						<p>Широкоформатный керамогранит на стену для…</p>
+						<p class="general__description--moreinfo">Широкоформатный керамогранит на стену для…</p>
 						<button class="news__button">Узнать больше</button>
 					</div>
 					<div class="news__card">
 						<img src="./img/portfolio/news3.webp" alt="" class="img">
-						<p class="general__description">Креативные идеи использования акриловых столешниц в интерьере</p>
-						<p>Креативные идеи использования акриловых столешниц…</p>
+						<p class="general__description">Креативные идеи использования акриловых столешниц в интерьере
+						</p>
+						<p class="general__description--moreinfo">Креативные идеи использования акриловых столешниц…</p>
 						<button class="news__button">Узнать больше</button>
 					</div>
 				</div>
@@ -379,6 +385,7 @@
 	<script src="js/gallery.js" defer></script>
 	<script src="js/form.js" defer></script>
 	<script src="js/menuButton.js" defer></script>
+	<script src="js/collapseButton.js" defer></script>
 </body>
 
 </html>
