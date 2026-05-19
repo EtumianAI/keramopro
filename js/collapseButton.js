@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         behavior: 'smooth',
                         block: 'center'
                     });
-                }, 300); // 450ms = чуть больше, чем transition 0.4s в CSS
+                }, 450); // 450ms = чуть больше, чем transition 0.4s в CSS
 
             } else {
                 // Разворачиваем

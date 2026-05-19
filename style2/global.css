@@ -53,11 +53,12 @@ ul {
 
 .grid {
   display: grid;
-  /* grid-auto-flow: row; */
+  grid-auto-flow: row;
   justify-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: 3fr;
   gap: var(--spacing-sm);
-  padding: var(--spacing-lg);
+  /* padding: var(--spacing-lg); */
 }
 
 /* Кнопка бургера */
