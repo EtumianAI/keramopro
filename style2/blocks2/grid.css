@@ -62,7 +62,12 @@
     }
 }
 
-
+@media (min-width: 1024px) { /* --lg: */
+    .services {
+    padding: var(--spacing-xs) 0;
+    background: var(--color-bg);
+}
+}
 .grid {
     display: grid;
     grid-auto-flow: row;
