@@ -19,7 +19,7 @@
 <body>
 
 	<!-- Шапка с навигацией -->
-	<header class="header">
+	<header class="header header--smart">
 		<div class="container header__inner">
 			<a href="index.html" class="logo">
 				<span class="logo__title">STONE TOWN</span>
@@ -214,29 +214,29 @@
 					островов из крупноформатного керамогранита
 					<div class="grid general__description text-transform-uppercase">
 						<p>
-							<i class="fa-regular fa-1"></i>
-							<i class="fa-regular fa-5"></i>
-							лет на рынке
+							<i class="fa-regular fa-message"></i>
+							<br>круглосуточная связь
 						</p>
 						<p>
-							<i class="fa-regular fa-message"></i>
-							круглосуточная связь
+							<i class="fa-regular fa-1"></i>
+							<i class="fa-regular fa-5"></i>
+							<br>лет на рынке
 						</p>
 						<p>
 							<i class="fa-regular fa-circle-user"></i>
-							ИНДИВИДУАЛИЗМ
+							<br>ИНДИВИДУАЛИЗМ
 						</p>
 						<p>
 							<i class="fa-solid fa-check"></i>
-							650+ успешных работ
+							650+ <br>успешных работ
 						</p>
 						<p>
 							<i class="fa-solid fa-guarani-sign"></i>
-							гарантия
+							<br>гарантия
 						</p>
 						<p>
 							<i class="fa-solid fa-briefcase"></i>
-							профессионализм
+							<br>профессионализм
 						</p>
 						</div">
 				</h2>
@@ -338,13 +338,13 @@
 						<a href="#" aria-label="VK">VK</a>
 					</div>
 				</div>
-				<form class="form" action="https://formspree.io/f/ВАШ_ID" method="POST">
-					<input type="text" name="name" placeholder="Ваше имя" required />
-					<input type="tel" name="phone" placeholder="Телефон" required />
-					<textarea name="message" placeholder="Комментарий"></textarea>
-					<button type="submit" class="btn btn--primary">Отправить заявку</button>
-				</form>
 			</div>
+			<form class="form container" action="https://formspree.io/f/ВАШ_ID" method="POST">
+				<input type="text" name="name" placeholder="Ваше имя" required />
+				<input type="tel" name="phone" placeholder="Телефон" required />
+				<textarea name="message" placeholder="Комментарий"></textarea>
+				<button type="submit" class="btn btn--primary">Отправить заявку</button>
+			</form>
 		</section>
 
 		<section>
@@ -386,6 +386,7 @@
 	<script src="js/form.js" defer></script>
 	<script src="js/menuButton.js" defer></script>
 	<script src="js/collapseButton.js" defer></script>
+	<script src="js/header-scroll.js" defer></script>
 </body>
 
 </html>

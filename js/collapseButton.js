@@ -68,12 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.classList.add('is-expanded');
                 content.style.maxHeight = content.scrollHeight + 'px';
 
-                setTimeout(() => {
-                    toggle.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
-                }, 300);
             }
 
             textSpan.textContent = isExpanded ? 'Показать полностью' : 'Свернуть';

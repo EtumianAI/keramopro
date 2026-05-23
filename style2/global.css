@@ -43,6 +43,7 @@ ul {
 .padding {
   padding: 24px;
 }
+
 .text-transform-uppercase {
   text-transform: uppercase;
 }
@@ -51,15 +52,6 @@ ul {
   text-align: center;
 }
 
-.grid {
-  display: grid;
-  grid-auto-flow: row;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-template-rows: 3fr;
-  gap: var(--spacing-sm);
-  /* padding: var(--spacing-lg); */
-}
 
 /* Кнопка бургера */
 .burger {

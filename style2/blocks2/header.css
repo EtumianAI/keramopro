@@ -11,6 +11,38 @@
     }
   }
 
+  /* Шапка в нормальном состоянии */
+  .header--smart {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--color-bg, #fff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    /* Оптимизация анимации */
+  }
+
+  /* Тень появляется, когда шапка прилипла */
+  .header--smart.is-sticky {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Шапка уезжает вверх */
+  .header--smart.is-hidden {
+    transform: translateY(-100%);
+  }
+
+  /* Шапка возвращается */
+  .header--smart.is-visible {
+    transform: translateY(0);
+  }
+
+  .header--smart.fixed {
+    position: fixed;
+  }
+
   .header__inner {
     display: flex;
     align-items: center;

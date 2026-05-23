@@ -174,13 +174,11 @@ html {
 
 /* === CONTACTS === */
 .contacts {
-  padding: var(--spacing-xl) 0;
+  /* padding: var(--spacing-xl) 0; */
 }
 
 .contacts__grid {
   display: grid;
-  justify-items: stretch;
-  grid-template-columns: auto;
   gap: var(--spacing-lg);
 }
 
@@ -223,10 +221,11 @@ html {
 /* Форма */
 .form {
   display: flex;
-  /* align-items: center; */
+  align-items: stretch;
   flex-direction: column;
   gap: var(--spacing-sm);
   max-width: 500px;
+  padding: var(--spacing-lg) 0 var(--spacing-lg);
 }
 
 .form input,
@@ -247,7 +246,7 @@ html {
   border-color: var(--color-primary);
 }
 
-
+@media (min-width: 670px)
 
 /* === АНИМАЦИИ ПРИ СКРОЛЛЕ === */
 [data-animate] {

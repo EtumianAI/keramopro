@@ -38,7 +38,7 @@
 .contacts h2 {
     text-align: center;
     font-size: var(--font-size-xl);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 }
 
 .services__grid {
@@ -63,18 +63,43 @@
 }
 
 
-.service-card {
-    background: var(--color-bg);
-    padding: var(--spacing-md);
-    border-radius: 8px;
-    text-align: center;
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    grid-template-rows: 3fr;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-xl);
+
+    /* padding: var(--spacing-lg); */
 }
 
-/* .service-card:hover {
+@media (min-width: 670px) {
+    .grid {
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3fr;
+        gap: var(--spacing-sm);
+        padding-top: var(--spacing-xl);
+    }
+}
+    .service-card {
+        background: var(--color-bg);
+        padding: var(--spacing-md);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    /* .service-card:hover {
     transform: translateY(-5px);
 } */
 
-/* .service-card img {
+    /* .service-card img {
   width: 64px;
   height: 64px;
   margin: 0 auto var(--spacing-sm);

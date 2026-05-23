@@ -1,6 +1,6 @@
 .hero {
   min-height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(92, 92, 92, 0.342), rgba(0, 0, 0, 0.5)),
     url('/keramopro/img/portfolio/creative.webp') center/cover no-repeat;
   display: grid;
   place-items: center;
