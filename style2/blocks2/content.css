@@ -15,6 +15,7 @@ html {
 .general__element {
   flex-direction: column;
   text-align: center;
+
 }
 
 .general__image {
@@ -55,6 +56,13 @@ html {
   font-weight: 600;
 }
 
+.main {
+  .general__title {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-lgr);
+  }
+}
+
 .general__text {
   text-align: start;
 }
@@ -63,6 +71,13 @@ html {
 
 /* ПК версия */
 @media (min-width: 1024px) {
+
+  .main {
+    .general__title {
+      
+      font-size: var(--font-size-xl);
+    }
+  }
 
   .general__element {
     display: flex;
@@ -144,6 +159,9 @@ html {
 /* === PRICES === */
 .prices {
   padding: var(--spacing-xl) 0;
+}
+.grid.price-list {
+  grid-template-columns: 1fr 1fr;
 }
 
 .price-list {
@@ -265,20 +283,21 @@ html {
   }
 }
 
-@media (min-width: 670px)
-/* === АНИМАЦИИ ПРИ СКРОЛЛЕ === */
-[data-animate] {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease,
-  transform 0.6s ease;
-}
+@media (min-width: 670px) {
 
-[data-animate].animate {
-  opacity: 1;
-  transform: translateY(0);
-}
+  /* === АНИМАЦИИ ПРИ СКРОЛЛЕ === */
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease,
+      transform 0.6s ease;
+  }
 
+  [data-animate].animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* === Утилиты === */
 .text-center {

@@ -98,7 +98,7 @@
 		</section>
 
 		<section class="general">
-			<div class="container">
+			<div class="container flex">
 				<div class="general__element" data-animate style="--i: 1;">
 					<img class="general__image" src="img/portfolio/general__description--element1.webp" alt="">
 					<div class="general__description">
@@ -208,42 +208,43 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="main">
 			<div class="container">
 				<h2 class="general__title text-align-center">Изготовление столешниц, кухонных фасадов, раковин и
 					островов из крупноформатного керамогранита
-					<div class="grid general__description text-transform-uppercase">
-						<p>
-							<i class="fa-regular fa-message"></i>
-							<br>круглосуточная связь
-						</p>
-						<p>
-							<i class="fa-regular fa-1"></i>
-							<i class="fa-regular fa-5"></i>
-							<br>лет на рынке
-						</p>
-						<p>
-							<i class="fa-regular fa-circle-user"></i>
-							<br>ИНДИВИДУАЛИЗМ
-						</p>
-						<p>
-							<i class="fa-solid fa-check"></i>
-							650+ <br>успешных работ
-						</p>
-						<p>
-							<i class="fa-solid fa-guarani-sign"></i>
-							<br>гарантия
-						</p>
-						<p>
-							<i class="fa-solid fa-briefcase"></i>
-							<br>профессионализм
-						</p>
-						</div">
 				</h2>
+				<div class="grid general__description text-transform-uppercase">
+					<p>
+						<i class="fa-regular fa-message"></i>
+						<br>круглосуточная связь
+					</p>
+					<p>
+						<i class="fa-regular fa-1"></i>
+						<i class="fa-regular fa-5"></i>
+						<br>лет на рынке
+					</p>
+					<p>
+						<i class="fa-regular fa-circle-user"></i>
+						<br>ИНДИВИДУАЛИЗМ
+					</p>
+					<p>
+						<i class="fa-solid fa-check"></i>
+						650+ <br>успешных работ
+					</p>
+					<p>
+						<i class="fa-solid fa-briefcase"></i>
+						<br>профессионализм
+					</p>
+					<p>
+						<i class="fa-solid fa-guarani-sign"></i>
+						<br>гарантия
+					</p>
+				</div>
+
 			</div>
 		</section>
 		<!-- Портфолио (галерея) -->
-		<section class="portfolio collapsible-section"" id="portfolio">
+		<section class="portfolio collapsible-section"" id=" portfolio">
 			<div class="container">
 				<h2>Наши работы</h2>
 				<div class="gallery collapsible-content" id="gallery">
@@ -306,30 +307,33 @@
 				</div>
 			</div>
 			<!-- Кнопка-переключатель -->
-			<button class="collapsible-toggle" aria-expanded="false" aria-controls="gallery">
-				<span class="toggle-text">Показать полностью</span>
-				<span class="toggle-icon" aria-hidden="true">▼</span>
-			</button>
+			<div class="text-align-center">
+				<button class="collapsible-toggle" aria-expanded="false" aria-controls="gallery">
+					<span class="toggle-text">Показать полностью</span>
+					<span class="toggle-icon" aria-hidden="true">▼</span>
+				</button>
+			</div>
 		</section>
 
 		<!-- Цены -->
 		<section class="prices" id="prices">
 			<div class="container">
 				<h2>Ориентировочные цены</h2>
-				<ul class="price-list">
-					<li><span>Столешница из керамогранита</span> <strong>от 20 000 ₽/пог.м</strong></li>
-					<li><span>Фартук из керамогранита</span> <strong>от 7 000 ₽/кв.м</strong></li>
-					<!-- Остальные пункты -->
-				</ul>
+				<div class="price-list grid">
+					<p>Столешница из керамогранита</p>
+					<p><strong>от 20 000 ₽/пог.м</strong></p>
+					<p>Фартук из керамогранита</p>
+					<p><strong>от 7 000 ₽/кв.м</strong></p>
+				</div>
 			</div>
 		</section>
 
 		<!-- Контакты и форма -->
 		<section class="contacts" id="contacts">
 			<div class="container contacts__grid">
-				<div class="contacts__info">
+				<div class="contacts__info text-align-center">
 					<h2>Свяжитесь с нами</h2>
-					<p>📍 Москва, Черницынский проезд, д. 3, стр. 3</p>
+					<p class="">📍 Москва, Черницынский проезд, <br> д. 3, стр. 3</p>
 					<p>📧 <a href="mailto:etokamen@bk.ru">etokamen@bk.ru</a></p>
 					<p>📱 <a href="tel:+79629359967">+7 962 935 99 67</a></p>
 					<div class="socials">

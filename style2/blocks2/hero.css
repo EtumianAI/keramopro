@@ -293,7 +293,7 @@
 }
 
 .news {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: var(--spacing-xs);
 }
@@ -334,27 +334,11 @@
 .news__button:hover {
   background-color: var(--color-bg);
 }
+
 /* Адаптивность */
-/* @media (max-width: 768px) {
-  .contacts-table {
-    padding: 40px 0;
+@media (min-width: 1024px) {
+  .news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
-
-  .contacts-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .contact-item {
-    padding: 20px;
-  }
-
-  .social-icons {
-    gap: 15px;
-  }
-
-  .social-icon {
-    width: 45px;
-    height: 45px;
-  }
-} */
+}

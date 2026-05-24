@@ -73,11 +73,11 @@
     grid-auto-flow: row;
     justify-items: center;
     align-items: center;
+    text-align: center;
     grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
     grid-template-rows: 3fr;
     gap: var(--spacing-sm);
-    padding-top: var(--spacing-xl);
-
+    /* padding-top: var(--spacing-xl); */
     /* padding: var(--spacing-lg); */
 }
 
@@ -89,8 +89,8 @@
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 3fr;
-        gap: var(--spacing-sm);
-        padding-top: var(--spacing-xl);
+        gap: var(--spacing-md);
+        /* padding-top: var(--spacing-xl); */
     }
 }
     .service-card {
