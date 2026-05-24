@@ -143,23 +143,48 @@
 /* Контакты */
 
 /* Основные стили таблицы контактов */
-.contacts-table {
-  padding: 60px 0;
-  background-color: var(--color-bg);
-}
 
 .contacts-table h2 {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 32px;
+  font-size: var(--font-size-xl);
   color: var(--color-text);
 }
 
 .contacts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.contacts-grid>* {
+  width: auto;
+  margin: 0;
+}
+
+@media (min-width: 48rem) {
+  .contacts-table {
+    padding: var(--spacing-md) 0;
+  }
+
+  .contacts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: 40px;
+  }
+
+  /* Соцсети */
+  .social-links {
+    /* Занимает один ряд и
+    растягивается на две колонки */
+    grid-column: span 2;
+    text-align: center;
+    padding: 40px;
+    background: var(--color-text);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .contact-item {
@@ -220,7 +245,6 @@
 .social-links {
   /* Занимает один ряд и
   растягивается на две колонки */
-  grid-column: span 2;
   text-align: center;
   padding: 40px;
   background: var(--color-text);

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.header--smart');
+    const header = document.querySelector('.header');
     if (!header) return;
 
     //  ПРОВЕРКА: запускаем логику только на экранах уже 768px

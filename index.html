@@ -19,31 +19,34 @@
 <body>
 
 	<!-- Шапка с навигацией -->
-	<header class="header header--smart">
+	<header class="header">
 		<div class="container header__inner">
 			<a href="index.html" class="logo">
 				<span class="logo__title">STONE TOWN</span>
 				<span class="logo__subtitle">Проекты для комфортной жизни</span>
 			</a>
 
-			<!-- Бургер кнопка -->
-			<button class="burger" aria-label="Открыть меню" aria-expanded="false">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
 
-			<nav class="nav">
-				<a href="index.html" class="nav__link active">Главная</a>
-				<a href="uslugi.html" class="nav__link">Услуги</a>
-				<a href="maintenance.html" class="nav__link">Производство</a>
-				<a href="aboutus.html" class="nav__link">О нас</a>
-				<a href="#portfolio" class="nav__link">Работы</a>
-				<a href="#prices" class="nav__link">Цены</a>
-				<a href="contacts.html" class="nav__link">Контакты</a>
-			</nav>
-			<a href="tel:+79629359967" class="phone">+7 962 935 99 67</a>
+			<!-- Бургер кнопка -->
+			<div class="burger-container">
+				<button class="burger" aria-label="Открыть меню" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				
+				<nav class="nav">
+					<a href="index.html" class="nav__link active">Главная</a>
+					<a href="uslugi.html" class="nav__link">Услуги</a>
+					<a href="maintenance.html" class="nav__link">Производство</a>
+					<a href="aboutus.html" class="nav__link">О нас</a>
+					<a href="#portfolio" class="nav__link">Работы</a>
+					<a href="#prices" class="nav__link">Цены</a>
+					<a href="contacts.html" class="nav__link">Контакты</a>
+				</nav>
+			</div>
 		</div>
+		<!-- <a href="tel:+79629359967" class="phone">+7 962 935 99 67</a> -->
 	</header>
 	<main>
 		<!-- Герой-секция -->
@@ -384,6 +387,7 @@
 		</div>
 	</footer>
 
+	<button class="scroll-up-button" aria-label="Вернуться наверх" title="Наверх"><span aria-hidden="true">↑</span></button>
 	<!-- Скрипты -->
 	<script src="js/animations.js" defer></script>
 	<script src="js/gallery.js" defer></script>
@@ -391,6 +395,7 @@
 	<script src="js/menuButton.js" defer></script>
 	<script src="js/collapseButton.js" defer></script>
 	<script src="js/header-scroll.js" defer></script>
+	<script src="js/scroll-up-button.js" defer></script>
 </body>
 
 </html>

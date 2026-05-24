@@ -25,20 +25,20 @@
   /* Отступы */
   /* 8px */
   --spacing-xs: 0.5rem;
-    /* 16px */
-    --spacing-sm: 1rem;
-    /* 32px */
-    --spacing-md: 2rem;
-    /* 64px */
-    --spacing-lg: 4rem;
-    /* 96px */
-    --spacing-xl: 6rem;
+  /* 16px */
+  --spacing-sm: 1rem;
+  /* 32px */
+  --spacing-md: 2rem;
+  /* 64px */
+  --spacing-lg: 4rem;
+  /* 96px */
+  --spacing-xl: 6rem;
 
   /* Контейнер */
   /* 1200px */
   --container-width: 75rem;
-    /* 20px */
-    --container-padding: 1.25rem;
+  /* 20px */
+  --container-padding: 1.25rem;
 
   /* Анимации */
   --transition: 0.3s ease;
@@ -51,5 +51,13 @@
    --sm:  576px (мобильные)
    --md:  768px (планшеты)
    --lg:  1024px (десктоп)
-   --xl:  1440px (большие экраны)
+   --xl:  1440px (большие экраны) 
 */
+/* @media (min-width: 48rem) */
+/* 768px */
+
+/* @media (min-width: 64rem) */
+/* 1024px */
+
+/* @media (min-width: 90rem) */
+/* 1440px */

@@ -1,20 +1,22 @@
 /* Контейнер для центрирования контента */
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 var(--container-padding);
-}
 
 /* Базовые стили (мобильные) */
-@media (min-width: 576px) {
   .container {
     padding: 15px;
     font-size: 14px;
   }
+
+  /* ПК  */
+@media (min-width: 64rem) {
+  .container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+  }
 }
 
 /* Планшет */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .container {
     padding: 20px;
     font-size: var(--font-size-base);
