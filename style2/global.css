@@ -63,9 +63,30 @@ ul {
   right: 1rem;
   width: 3rem;
   height: 3rem;
+
 }
 
 .scroll-up-button.visible {
   visibility: visible;
   opacity: 30%;
+}
+
+
+@media (min-width: 48rem) {
+  .scroll-up-button {
+    visibility: hidden;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10%
+  }
+
+  @media (hover: hover) {
+    .scroll-up-button:hover {
+      opacity: 100%;
+    }
+
+  }
 }

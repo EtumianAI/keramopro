@@ -1,13 +1,17 @@
 .hero {
   min-height: 80vh;
-  background: linear-gradient(rgba(92, 92, 92, 0.342), rgba(0, 0, 0, 0.5)),
-    url('/keramopro/img/portfolio/creative.webp') center/cover no-repeat;
+  background: #111 url('/keramopro/img/portfolio/creative.webp') center/cover no-repeat;
   display: grid;
   place-items: center;
   text-align: center;
   color: var(--color-text);
   padding: var(--spacing-lg) 0;
-  background-attachment: fixed;
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    background-attachment: fixed;
+  }
 }
 
 .hero h1 {
@@ -176,15 +180,18 @@
 
   /* Соцсети */
   .social-links {
-    /* Занимает один ряд и
-    растягивается на две колонки */
-    grid-column: span 2;
+    /* grid-column: span 2; */
     text-align: center;
     padding: 40px;
     background: var(--color-text);
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
+}
+
+.contact-info--btn {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-item {
@@ -196,11 +203,112 @@
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .btn {
+    color: var(--color-bg);
+    height: 100%;
+    align-self: center;
+    border-radius: 10px;
+  }
 }
 
-.contact-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+/* === МОДАЛЬНОЕ ОКНО === */
+.modal {
+  position: fixed;
+  inset: 0;
+  /* top: 0; right: 0; bottom: 0; left: 0 */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  /* Скрыто по умолчанию */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Открытое состояние */
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Оверлей (затемнение) */
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  /* Опционально: размытие фона */
+}
+
+/* Контент модалки */
+.modal__content {
+  position: relative;
+  background: var(--color-bg-alt, #222);
+  color: var(--color-text, #f4ede4);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+  /* Анимация появления */
+  transform: translateY(-20px) scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.active .modal__content {
+  transform: translateY(0) scale(1);
+}
+
+/* Кнопка закрытия (крестик) */
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modal__close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modal__title {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 576px) {
+  .modal__content {
+    padding: 1.5rem;
+    max-height: 95vh;
+  }
+
+  .modal__close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 }
 
 .contact-icon {
@@ -237,8 +345,10 @@
   transition: color 0.2s ease;
 }
 
-.contact-info a:hover {
-  color: #c9a961;
+@media (hover: hover) {
+  .contact-info a:hover {
+    color: #c9a961;
+  }
 }
 
 /* Соцсети */
@@ -260,9 +370,7 @@
 
 .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .social-icon {
@@ -286,9 +394,11 @@
   color: white;
 }
 
-.social-icon.whatsapp:hover {
-  background-color: #128C7E;
-  transform: translateY(-3px);
+@media (hover: hover) {
+  .social-icon.whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px);
+  }
 }
 
 .social-icon.vk {
@@ -296,9 +406,11 @@
   color: white;
 }
 
-.social-icon.vk:hover {
-  background-color: #3d5a80;
-  transform: translateY(-3px);
+@media (hover: hover) {
+  .social-icon.vk:hover {
+    background-color: #3d5a80;
+    transform: translateY(-3px);
+  }
 }
 
 .social-icon.telegram {
@@ -306,14 +418,17 @@
   color: white;
 }
 
-.social-icon.telegram:hover {
-  background-color: #006699;
-  transform: translateY(-3px);
-}
+@media (hover: hover) {
+  .social-icon.telegram:hover {
+    background-color: #006699;
+    transform: translateY(-3px);
+  }
 
-.social-icon:hover {
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  .social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .news {

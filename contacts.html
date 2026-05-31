@@ -20,8 +20,8 @@
                 <span class="logo__title">STONE TOWN</span>
                 <span class="logo__subtitle">Проекты для комфортной жизни</span>
             </a>
-    
-    
+
+
             <!-- Бургер кнопка -->
             <div class="burger-container">
                 <button class="burger" aria-label="Открыть меню" aria-expanded="false">
@@ -29,15 +29,15 @@
                     <span></span>
                     <span></span>
                 </button>
-    
+
                 <nav class="nav">
-                    <a href="index.html" class="nav__link active">Главная</a>
-                    <a href="uslugi.html" class="nav__link">Услуги</a>
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
                     <a href="maintenance.html" class="nav__link">Производство</a>
                     <a href="aboutus.html" class="nav__link">О нас</a>
                     <a href="#portfolio" class="nav__link">Работы</a>
-                    <a href="#prices" class="nav__link">Цены</a>
-                    <a href="contacts.html" class="nav__link">Контакты</a>
+                    <a href="prices.html" class="nav__link">Цены</a>
+                    <a href="contacts.html" class="nav__link active">Контакты</a>
                 </nav>
             </div>
         </div>
@@ -112,6 +112,52 @@
                     </div>
                 </div>
 
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Оплата</h3>
+                        <a href="mailto:etokamen@bk.ru">Банковские реквизиты</a>
+                    </div>
+                    <button class="btn requisites-toggle" type="button" aria-expanded="false"
+                        aria-controls="bank-modal">
+                        Показать
+                    </button>
+                </div>
+                <div id="bank-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+                    <div class="modal__overlay" data-close></div>
+                    <div class="modal__content">
+                        <button class="modal__close" type="button" aria-label="Закрыть окно" data-close>×</button>
+
+                        <h2 id="modal-title" class="modal__title">Банковские реквизиты</h2>
+                        <dl class="requisites-list">
+                            <dt>Получатель:</dt>
+                            <dd>111</dd>
+                            <dt>ИНН:</dt>
+                            <dd>7706 0925 28</dd>
+                            <dt>Расчётный счёт:</dt>
+                            <dd>7706 0925 28</dd>
+                            <dt>Кор/счет:</dt>
+                            <dd>3010 1810 7453 7452 5104</dd>
+                            <dt>Банк:</dt>
+                            <dd>ООО «Банк Точка»</dd>
+                            <dt>КПП</dt>
+                            <dd>770 543 002</dd>
+                            <dt>БИК:</dt>
+                            <dd>044 525 104</dd>
+                        </dl>
+
+                        <button type="button" class="copy-btn" aria-label="Скопировать реквизиты в буфер обмена">
+                            Копировать
+                        </button>
+                    </div>
+                </div>
                 <!-- Соцсети -->
                 <div class="social-links contact-item">
                     <h3>Мы в соцсетях</h3>
@@ -137,11 +183,14 @@
             <p>&copy; 2026 STONE TOWN. Все права защищены.</p>
         </div>
     </footer>
-
+    <button class="scroll-up-button" aria-label="Вернуться наверх" title="Наверх"><span aria-hidden="true">↑</span></button>
     <script src="js/animations.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <script src="js/form.js" defer></script>
     <script src="js/menuButton.js" defer></script>
+    <script src="js/header-scroll.js" defer></script>
+    <script src="js/scroll-up-button.js" defer></script>
+    <script src="js/requisites.js" defer></script>
 
 </body>
 
