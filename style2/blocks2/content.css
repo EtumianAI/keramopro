@@ -275,6 +275,13 @@ html {
   border-color: var(--color-primary);
 }
 
+.form-status {
+  margin-top: 1rem;
+  min-height: 1.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .form {
     /* Сетка: 2 поля в ряд, кнопка и текст на всю ширину */

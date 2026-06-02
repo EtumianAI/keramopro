@@ -17,6 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', isVisible, { passive: true });
     btn.addEventListener('click', scrollUp)
-
-    toggleVisibility();
 })

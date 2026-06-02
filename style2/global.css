@@ -63,12 +63,22 @@ ul {
   right: 1rem;
   width: 3rem;
   height: 3rem;
+  border-radius: 10%;
 }
 
 .scroll-up-button.visible {
   visibility: visible;
-  opacity: 0.3;
+  opacity: .5;
   transform: translateY(0) scale(1);
+  background-color: transparent;
+  border-color: var(--color-text);
+}
+
+.arrow-up {
+  color: white;
+  padding: 2rem;
+  /* Увеличивает кликабельную зону на 20px со всех сторон */
+  margin: -2rem;
 }
 
 @media (min-width: 48rem) {
@@ -76,14 +86,20 @@ ul {
     width: 5rem;
     height: 5rem;
     border-radius: 10%;
-
   }
 
   @media (hover: hover) {
     .scroll-up-button:hover {
-      opacity: 100%;
+      opacity: .7;
       transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
       will-change: opacity, transform;
+      background-color: var(--color-text-light);
+      border-color: var(--color-text);
+    }
+
+    .arrow-up:hover {
+      color: black;
+      transition: color 0.2s ease
     }
   }
 }

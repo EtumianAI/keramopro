@@ -40,9 +40,11 @@
   width: 80%;
 }
 
-.collapsible-toggle:hover {
-  background-color: transparent;
-  color: #fff;
+@media (hover: hover) {
+  .collapsible-toggle:hover {
+    background-color: transparent;
+    color: #fff;
+  }
 }
 
 .collapsible-toggle:focus-visible {

@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Что делает: Находит все кнопки с классом .collapsible-toggle на странице и сохраняет их в список (NodeList).
     // Зачем: Позволяет иметь несколько независимых сворачиваемых секций на одной странице.
     const toggles = document.querySelectorAll('.collapsible-toggle');
-    console.log(`Найдено кнопок: ${toggles.length}`);
     // Что делает: Запускает цикл, который по очереди берёт каждую найденную кнопку (toggle) и применяет к ней логику.
     toggles.forEach(toggle => {
 
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Что делает: "Слушает" клик по кнопке. При клике запускает функцию внутри.
         toggle.addEventListener('click', () => {
-            console.log('🖱 Клик по кнопке! Текущее состояние:', toggle.getAttribute('aria-expanded'));
+            
             // Что делает: Считывает текущее состояние кнопки. Если в атрибуте написано "true" → секция развёрнута. Если "false" или нет атрибута → свёрнута.
             // Зачем: Это наш "переключатель".Мы не храним состояние в отдельной переменной, а читаем его прямо из HTML(принцип single source of truth).
             const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
