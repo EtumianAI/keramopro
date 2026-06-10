@@ -30,4 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleMenu();
     }
   });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      nav.classList.remove('active')
+      burger.classList.remove('active')
+    }
+  })
 });

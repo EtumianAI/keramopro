@@ -76,9 +76,8 @@ ul {
 
 .arrow-up {
   color: white;
-  padding: 2rem;
-  /* Увеличивает кликабельную зону на 20px со всех сторон */
-  margin: -2rem;
+  padding: 1.5rem;
+  margin: -1.5rem;
 }
 
 @media (min-width: 48rem) {
@@ -88,10 +87,16 @@ ul {
     border-radius: 10%;
   }
 
+    .arrow-up {
+      color: white;
+      padding: 2rem;
+      margin: -2rem;
+    }
+
   @media (hover: hover) {
     .scroll-up-button:hover {
       opacity: .7;
-      transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease, background-color 0.2s ease;
       will-change: opacity, transform;
       background-color: var(--color-text-light);
       border-color: var(--color-text);

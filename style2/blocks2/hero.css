@@ -8,10 +8,17 @@
   padding: var(--spacing-lg) 0;
 }
 
+.background--none {
+  background: var(--color-bg);
+  padding: 0;
+}
+
 @media (min-width: 64rem) {
   .hero {
     background-attachment: fixed;
   }
+
+
 }
 
 .hero h1 {
@@ -45,6 +52,7 @@
   padding: 40px;
 }
 
+
 /* Контейнер карточки (ссылка) */
 .flip-card {
   background-color: var(--color-bg);
@@ -57,6 +65,7 @@
 }
 
 /* Внутренняя обёртка, которая будет вращаться */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -68,10 +77,13 @@
   border-radius: 12px;
 }
 
-/* Переворот при наведении или фокусе (для клавиатуры/тапа) */
-.flip-card:hover .flip-card-inner,
-.flip-card:focus-visible .flip-card-inner {
-  transform: rotateY(180deg);
+@media (hover: hover) {
+
+  /* Переворот при наведении или фокусе (для клавиатуры/тапа) */
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-visible .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Общие стили для лицевой и обратной стороны */
@@ -127,13 +139,16 @@
   transition: transform 0.3s ease;
 }
 
-.flip-card:hover .flip-arrow,
-.flip-card:focus-visible .flip-arrow {
-  transform: translateX(5px);
+@media (hover: hover) {
+
+  .flip-card:hover .flip-arrow,
+  .flip-card:focus-visible .flip-arrow {
+    transform: translateX(5px);
+  }
 }
 
 /* 📱 Адаптив для сенсорных экранов */
-@media (hover: none) {
+@media (hover: hover) {
   .flip-card-inner {
     transition: transform 0.3s ease;
   }
