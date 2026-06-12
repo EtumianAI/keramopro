@@ -379,3 +379,27 @@ html {
 .general__element {
   transition-delay: calc((var(--i) - 1) * 0.1s);
 }
+
+/* Карты */
+
+.map-section {
+  padding: 4rem 0;
+  background: var(--color-bg-alt, #222);
+}
+
+.map-wrapper {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  min-height: 400px;
+  /* Чтобы не схлопнулось, пока грузится */
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .map-wrapper {
+    min-height: 300px;
+    border-radius: 0.5rem;
+  }
+}

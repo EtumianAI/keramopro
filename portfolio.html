@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | STONE TOWN</title>
+    <meta name="description" content="Перечень услуг по изготовлению изделий из керамогранита.">
+
+    <!-- Подключение стилей (пути такие же, как в index.html) -->
+    <link rel="stylesheet" href="./style2/style.css">
+</head>
+
+<body>
+
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <span class="logo__title">STONE TOWN</span>
+                <span class="logo__subtitle">Проекты для комфортной жизни</span>
+            </a>
+
+
+            <!-- Бургер кнопка -->
+            <div class="burger-container">
+                <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="maintenance.html" class="nav__link">Производство</a>
+                    <a href="aboutus.html" class="nav__link">О нас</a>
+                    <a href="portfolio.html" class="nav__link active">Работы</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+            </div>
+        </div>
+        <!-- <a href="tel:+79629359967" class="phone">+7 962 935 99 67</a> -->
+    </header>
+
+    <!-- Уникальный контент страницы -->
+    <main class="page-content">
+        <!-- Портфолио (галерея) -->
+        <section class="portfolio collapsible-section"" id=" portfolio">
+            <div class="container">
+                <h2>Наши работы</h2>
+                <div class="gallery collapsible-content" id="gallery">
+                    <!-- Фото будут добавлены через JS или вручную -->
+                    <!-- ВСТАВЛЯЙТЕ СЮДА ВАШИ ФОТО -->
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio1.webp" data-full="img/portfolio/portfolio1.webp"
+                            alt="Кухня из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio2.webp" data-full="img/portfolio/portfolio2.webp"
+                            alt="Столешница в ванной" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio3.webp" data-full="img/portfolio/portfolio3.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio4.webp" data-full="img/portfolio/portfolio4.webp.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio5.webp" data-full="img/portfolio/portfolio5.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio6.webp" data-full="img/portfolio/portfolio6.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio7.webp" data-full="img/portfolio/portfolio7.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio8.webp" data-full="img/portfolio/portfolio8.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio9.webp" data-full="img/portfolio/portfolio9.webp"
+                            alt="Остров из керамогранита" loading="lazy" class="gallery__img" />
+                    </div>
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio10.webp" data-full="img/portfolio/portfolio10.webp"
+                            alt="Столешница на кухне" loading="lazy" class="gallery__img" />
+                    </div>
+        
+                    <div class="gallery__item" data-animate>
+                        <img src="img/portfolio/portfolio11.webp" data-full="img/portfolio/portfolio11.webp"
+                            alt="Столешница на кухне" loading="lazy" class="gallery__img" />
+                    </div>
+                </div>
+            </div>
+            <!-- Кнопка-переключатель -->
+            <div class="text-align-center">
+                <button class="collapsible-toggle" aria-expanded="false" aria-controls="gallery">
+                    <span class="toggle-text">Показать полностью</span>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 STONE TOWN. Все права защищены.</p>
+        </div>
+    </footer>
+    <button class="scroll-up-button" aria-label="Вернуться наверх" title="Наверх"><span
+            aria-hidden="true">↑</span></button>
+    <!-- Скрипты -->
+    <script src="js/animations.js" defer></script>
+    <script src="js/menuButton.js" defer></script>
+    <script src="js/scroll-up-button.js" defer></script>
+    <script src="js/header-scroll.js" defer></script>
+
+</body>
+
+</html>
