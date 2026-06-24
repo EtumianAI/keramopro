@@ -428,6 +428,17 @@
   }
 }
 
+.social-icon.max {
+  background: #74abeb;
+}
+
+@media (hover: hover) {
+  .social-icon.max:hover {
+    background-color: rgb(79, 129, 187);
+    transform: translateY(-3px);
+  }
+}
+
 .social-icon.telegram {
   background: #0088cc;
   color: white;
@@ -445,6 +456,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 }
+
 
 .news {
   display: none;
