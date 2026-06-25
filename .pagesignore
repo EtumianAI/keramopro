@@ -1,0 +1,10 @@
+.git
+.gitignore
+.wrangler
+.wranglerignore
+README.md
+.vscode
+.DS_Store
+Thumbs.db
+*.log
+node_modules
